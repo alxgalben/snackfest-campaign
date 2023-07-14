@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="{{ asset("styles/style.min.css") }}">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+{% endblock %}
+
+{% block body %}
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset("scripts/bundle.min.js") }}"></script>
+    <script>
+        let absolutePath = '../images';
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+    <script src="{{ asset("scripts/main.min.js") }}"></script>
+{% endblock %}

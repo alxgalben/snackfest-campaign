@@ -1,1 +1,1 @@
-# snackfest-campaign
+# snackfest-campaign-symfony

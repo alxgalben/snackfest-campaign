@@ -1,0 +1,138 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Snackfest | Acasa{% endblock %}
+
+    {% block body %}
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFBTBXT"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+
+        <!-- start:: Header -->
+
+        {% include 'reusable_templates/header.html.twig' %}
+
+        <!-- end:: Header -->
+
+        <main class="page homepage">
+
+
+
+            <!-- Site Homepage intro -->
+            <div class="homepage-wrapper">
+                <div class="top-section">
+                    <div class="top-section__wrapper">
+                        <div class="single-image-section">
+                            <img src="images/homepage/snackfest.png" alt="snackfest">
+                            <div class="first-cloud">
+                                <img src="images/homepage/big-cloud.png" alt="big cloud">
+                            </div>
+                        </div>
+                        <div class="multiple-images-section">
+                            <div class="first-cloud">
+                                <img src="images/homepage/big-cloud.png" alt="big cloud">
+                            </div>
+                            <div class="balloons-cloud">
+                                <img src="images/homepage/7days-balloon.png" alt="7days balloon">
+                                <img src="images/homepage/oreo-balloon.png" alt="oreo balloon">
+                                <img src="images/homepage/milka-balloon.png" alt="milka balloon">
+                                <img src="images/homepage/belvita-balloon.png" alt="belvita balloon">
+                                <div class="small-cloud">
+                                    <img src="images/homepage/small-cloud.png" alt="small cloud">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bottom-section">
+                    <div class="bottom-section__wrapper">
+                        <div class="text-section">
+
+                            <p class="title">Cumpără</p>
+                            <p class="description">Biscuiți și croasante <span>7Days</span>, <span>Oreo</span>,
+                                <span>Milka</span> sau
+                                <span>belVita</span> în valoare <span>de minimum 15</span> lei</p>
+                            <p class="title">ÎNSCRIE</p>
+                            <p class="description">bonul și</p>
+                            <p class="title">POȚI CÂȘTIGA</p>
+-
+                            <div class="campaign-info">
+                                <a href="#">ÎNSCRIE BON</a>
+                            </div>
+
+                        </div>
+                        <div class="image-section">
+                            <div class="image-section__wrapper">
+                                <div class=" mobile-section">
+                                    <div class="image ">
+                                        <img src="images/homepage/voucher-image.png" alt="voucher image">
+                                        <p class="image-description">
+                                            <span> Voucher <br> Eventim</span>
+                                        </p>
+                                    </div>
+                                    <div class="image ">
+                                        <img src="images/homepage/camera-prize.png" alt="camera image">
+                                        <p class="image-description">
+                                            <span>Instant <br> digital camera</span>
+                                        </p>
+                                    </div>
+                                    <div class="image ">
+                                        <img src="images/homepage/img3.png" alt="money prize image">
+                                        <p class="image-description">
+                                            <span>Voucher în valoare de 5.000 EURO</span> <br> pentru o experiență într-un parc de
+                                            distracții
+                                            alături de cei dragi
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class=" desktop-section">
+                                    <div class="image ">
+                                        <p class="image-title">PRIN MOMENTE NOROCOASE</p>
+                                        <img src="images/homepage/voucher-image.png" alt="voucher image">
+                                        <p class="image-description">
+                                            <span>Voucher <br> Eventim</span>
+                                        </p>
+                                    </div>
+                                    <div class="image ">
+                                        <img src="images/homepage/camera-prize.png" alt="camera image">
+                                        <p class="image-description">
+                                            <span>Instant <br> digital camera</span>
+                                        </p>
+                                    </div>
+                                    <div class="image ">
+                                        <p class="image-title">PRIN TRAGERE <br> LA SORȚI</p>
+                                        <img src="images/homepage/img3.png" alt="money prize image">
+                                        <p class="image-description">
+                                            <span>Voucher în valoare de 5.000 EURO</span> <br> pentru o experiență într-un parc de
+                                            distracții
+                                            alături de cei dragi
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="campaign-info">
+                    <a href="{{ path("register") }}" data-category="Homepage" data-label="Click - Inscrie Bon">ÎNSCRIE BON</a>
+                    <p>Perioada campaniei: 03.07 – 13.08.2023</p>
+                    <img src="images/homepage/bottom-bg-image.png" alt="carousel desktop" class="desktop">
+                    <img src="images/homepage/bottom-page-image-mobile.png" alt="carousel mobile" class="mobile">
+                </div>
+            </div>
+        </main>
+        <!-- start:: Footer -->
+
+        {% include 'reusable_templates/footer.html.twig' %}
+
+        <!-- end:: Footer -->
+
+    {% endblock %}

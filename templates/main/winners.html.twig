@@ -1,0 +1,54 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Snackfest | Castigatorii campaniei{% endblock %}
+
+    {% block body %}
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFBTBXT"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+        <!-- start:: Header -->
+
+        {% include 'reusable_templates/header.html.twig' %}
+
+        <!-- end:: Header -->
+
+        <main class="page-winners">
+            <div class="winners-wrapper">
+                <!-- Site Homepage teaser page -->
+                <section class="winners__content">
+                    <div class="inner">
+
+                        <h1>CÂȘTIGĂTORI</h1>
+
+                        <h2>Verifică dacă te afli printre fericiții câștigători! Îți ținem pumnii!</h2>
+
+                        <div class="head">
+                            <span>NUME</span>
+                            <span>PREMIU</span>
+                        </div>
+                        <div class="content">
+
+                        </div>
+                    </div>
+                </section>
+                <div class="campaign-info">
+                    <img src="images/desktop-yellow-bottom-image.png" alt="carousel desktop" class="desktop">
+                    <img src="images/mobile-yellow-bottom-image.png" alt="carousel mobile" class="mobile">
+                </div>
+                <div class="bot-img"></div>
+
+            </div>
+        </main>
+
+        <!-- start:: Footer -->
+
+        {% include 'reusable_templates/footer.html.twig' %}
+
+        <!-- end:: Footer -->
+
+    {% endblock %}

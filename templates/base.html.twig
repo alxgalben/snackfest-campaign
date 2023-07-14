@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %} {{ app_name }} | {% endblock %}</title>
+    <meta property="og:title" content="Bucură-te de Snackfest!"/>
+    <meta property="og:description"
+          content="Cu biscuiții MILKA, OREO, BELVITA și croasantele 7DAYS te bucuri de Snackfest și ai parte de premii
+          pentru o vară relaxantă! Înscrie-te în campanie și poți câștiga un voucher pentru o experiență într-un parc de
+          distracții alături de cei dragi, în valoare de 5000 EURO, una dintre camerele digitale instant sau unul dintre
+          voucherele Eventim, în valoare de 300 lei. Participă și tu!"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="{{ asset('assets/images/fb-share.png') }}"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <link rel="icon" type="image/ico" href="{{ asset('assets/images/favicon.ico') }}"/>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body class="{% block theme %}{% endblock %}">
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+{% block page_javascripts %}{% endblock %}
+</body>
+</html>

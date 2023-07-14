@@ -1,0 +1,172 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Snackfest | Inscrie-te in campanie{% endblock %}
+
+    {% block body %}
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFBTBXT"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+
+        <!-- start:: Header -->
+
+        {% include 'reusable_templates/header.html.twig' %}
+
+        <!-- end:: Header -->
+
+        <main class="page register">
+            <!-- Site Homepage intro -->
+            <div class="container-register">
+                <div class="content">
+                    <h1>ÎNSCRIE BON</h1>
+                    <p>Înscrie mai jos bonul care atestă achiziția biscuiților sau croasantelor tale favorite pentru a participa în campanie.</p>
+                </div>
+                <div class="form-wrapper has-loader">
+                    <form id="registerForm" autocomplete="on">
+                        <div class="error-messages"></div>
+
+                        <div class="form-group">
+                            <label for="phone">număr telefon</label>
+                            <input type="text" class="form-control" name="phone" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="store">magazin</label>
+                            <div class="select-wrapper">
+                                <select name="store" id="store" class="form-control">
+                                    <option value="" disabled selected hidden>&nbsp;</option>
+                                    <option value="carrefour">Carrefour</option>
+                                    <option value="cora">Cora</option>
+                                    <option value="kaufland">Kaufland</option>
+                                    <option value="mega">Mega Image</option>
+                                    <option value="metro">Metro</option>
+                                    <option value="penny">Penny</option>
+                                    <option value="profi">Profi</option>
+                                    <option value="selgros">Selgros</option>
+                                    <option value="altele">Altele</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="receiptNumber">număr bon fiscal</label>
+                            <div class="wrapper-number-receipt">
+                                <input type="text" name="receiptNumber" id="receiptNumber"
+                                       class="form-control top-input" required>
+                                <div class="info-wrapper">
+                                    <img src="../../images/register/info.png" alt="question" width="23"
+                                         height="23" class="open-receipt-modal">
+                                </div>
+                                <div id="receiptModal">
+                                    <img class="receipt-bon" src="images/bonuri/Auchan.png" alt="receipt" width="323" height="631">
+                                    <div class="closeModal">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <label for="date">dată bon fiscal</label>
+                            <input type="text" name="date" id="date" class="form-control form-control--date" readonly="readonly">
+                        </div>
+                        <div class="checkbox-group first-check">
+                            <input type="checkbox" id="age" name="age">
+                            <label for="age">Declar că am peste 18 ani</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms" name="terms">
+                            <label for="terms">Am citit și sunt de acord cu <a href="{{ path('terms-and-conditions') }}">Termenii și
+                                    condițiile</a></label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="rule" name="rule" required>
+                            <label for="rule">Am citit și sunt de acord cu <a href="{{ path('rules') }}">regulamentul</a>
+                                campaniei promoționale</label>
+                        </div>
+                        <div class="recaptcha">
+                            <div id="g-recaptcha" class="g-recaptcha recaptcha" data-sitekey="6LehYwInAAAAANphap3Ai7HpPoMpT56OP5Lozihj"></div>
+                        </div>
+
+                        <div class="form-action">
+                            <input type="submit" value="Trimite Bon" data-category="Sectiune Inscrie-te"
+                                   data-label="Click - Trimite Bon" class="primary-button-biscuits" id="form-submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bot-img">
+
+                <img src="images/desktop-yellow-bottom-image.png" alt="carousel desktop" class="desktop">
+                <img src="images/mobile-yellow-bottom-image.png" alt="carousel mobile" class="mobile">
+
+            </div>
+
+
+
+            <!-- start:: Message modal -->
+            <div class="modal fade message-modal " id="messageModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="responseType container">
+                                <div class="image-container voucher">
+                                    <img src="../images/register/voucher.png" alt="image" width="132" height="231">
+                                </div>
+
+                                <div class="image-container success">
+                                    <img src="../images/register/success-all.png" alt="image" width="209" height="130">
+                                </div>
+
+                                <div class="image-container camera">
+                                    <img src="../images/register/camera.png" alt="image" width="209" height="130">
+                                </div>
+
+                                <div class="image-container double">
+                                    <img src="../images/register/double.png" alt="image" width="246" height="286">
+                                </div>
+
+                                <div class="image-container blocked-correct">
+                                    <img src="../images/register/blocked-correct.png" alt="image" width="185" height="181">
+                                </div>
+
+                                <div class="image-container blocked-correct-last-week">
+                                    <img src="../images/register/blocked-correct-last-week.png" alt="image" width="178" height="184">
+                                </div>
+
+                                <div class="image-container post-campanie">
+                                    <img src="../images/register/post-campanie.png" alt="image" width="178" height="184">
+                                </div>
+
+                                <div class="response">
+                                    <p>Acest număr de bon fiscal a mai fost înscris în campanie. Pentru a putea participa, te rugăm
+                                        să introduci alt bon fiscal.</p>
+                                </div>
+
+
+                            </div>
+                            <div class="bot-img">
+                                <img src="images/register/modal-desktop-bg.svg" alt="carousel desktop" class="desktop">
+                                <img src="images/mobile-yellow-bottom-image.png" alt="carousel mobile" class="mobile">
+                            </div>
+                            <div class="close-modal">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- end:: Message modal -->
+
+        </main>
+
+        <!-- start:: Footer -->
+
+        {% include 'reusable_templates/footer.html.twig' %}
+
+        <!-- end:: Footer -->
+
+        </body>
+    {% endblock %}

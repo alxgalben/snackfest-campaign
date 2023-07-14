@@ -1,0 +1,148 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Snackfest | Cum poti castiga{% endblock %}
+
+    {% block body %}
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFBTBXT"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+
+        <main class="how-to-win">
+            <!-- start:: Header -->
+
+            {% include 'reusable_templates/header.html.twig' %}
+
+            <!-- end:: Header -->
+
+            <div class="products-wrapper how-to-win-section">
+                <!-- Site Homepage teaser page -->
+                <div class="how-to-win-wrapper">
+                    <div class="first-content">
+                        <h1>CUM POȚI CÂȘTIGA</h1>
+                        <h2>Răsfață-te alături de produsele tale preferate și ai șansa de a câștiga premii pentru o vară relaxantă!</h2>
+                    </div>
+                    <div class="content mobile-section">
+                        <div class="how-to-win-section buy">
+
+                            <div class="image-text-section">
+                                <div class="buy-text text">
+                                    <h4>CUMPĂRĂ</h4>
+                                    <p>biscuiți și croasante <br> în valoare <span>de minimum 15 lei</span></p>
+                                </div>
+                                <div class="cookie-image">
+                                    <img src="images/how-to-win/sweets.png" alt="buy" class="mobile-image-cookies">
+                                </div>
+
+
+                            </div>
+
+                            <div class="button-section bt-rules">
+                                <a href="{{ path("rules") }}">REGULAMENT</a>
+                            </div>
+                        </div>
+                        <div class="how-to-win-section enroll">
+                            <div class="image-text-section">
+                                <div class="enroll-text text">
+                                    <h4>Înscrie</h4>
+                                    <p>bonul</p>
+                                </div>
+                                <img src="images/how-to-win/mobile-inscrie-bon.png" alt="buy" class="mobile-image">
+                            </div>
+                            <div class="button-section bt-register">
+                                <a href="{{ path("register") }}">ÎNSCRIE BON</a>
+                            </div>
+                        </div>
+                        <div class="how-to-win-section you-can-win">
+                            <div class="image-text-section">
+                                <div class="you-can-win-text text">
+                                    <h4>Poți câștiga</h4>
+                                    <p>PRIN MOMENTE NOROCOASE</p>
+                                </div>
+
+
+                            </div>
+                            <div class="you-can-win__images">
+                                <img src="images/how-to-win/1.png" alt="buy" class="mobile-image image-background">
+                                <img src="images/how-to-win/2.png" alt="buy" class="mobile-image image-background">
+                                <div class="image-with-text">
+                                    <p>PRIN TRAGERE LA SORȚI</p>
+                                    <img src="images/how-to-win/3.png" alt="buy" class="mobile-image image-background">
+                                </div>
+
+
+                            </div>
+
+                            <div class="you-can-win-button">
+                                <div class="button-section bt-winners">
+                                    <a href="{{ path("winners") }}">CÂŞTIGĂTORI</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="content desktop-section">
+                        <div class="how-to-win-section buy">
+                            <div class="img img-buy">
+                                <img src="images/how-to-win/sweets.png" alt="buy-text" class="buy-image desktop-image ">
+                                <div class="buy-text text">
+                                    <h4>Cumpără</h4>
+                                    <p>biscuiți și croasante în valoare <br> <span>de minimum 15 lei</span></p>
+                                </div>
+                                <div class="you-can-win-button">
+                                    <div class="button-section">
+                                        <a href="{{ path("rules") }}">REGULAMENT</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img img-enroll">
+                                <img src="images/how-to-win/inscrie-bon.png" alt="inscrie-bon"
+                                     class="enroll-image desktop-image icon">
+                                <div class="enroll-text text">
+                                    <h4>Înscrie</h4>
+                                    <p>bonul fiscal</p>
+                                </div>
+                                <div class="you-can-win-button">
+                                    <div class="button-section bt-register">
+                                        <a href="{{ path("register") }}">ÎNSCRIE BON</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img img-you-can-win">
+                                <img src="images/how-to-win/multiple.png" alt="win" class="win-image desktop-image">
+                                <div class="you-can-win-text text">
+                                    <h4>Poți câștiga</h4>
+                                    <p>premii pentru o vară relaxantă</p>
+                                </div>
+                                <div class="you-can-win-button">
+                                    <div class="button-section bt-winners">
+                                        <a href="{{ path("winners") }}">CÂŞTIGĂTORI</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="campaign-info">
+                    <p class="d-none d-md-block">Perioada campaniei: 03.07 – 13.08.2023</p>
+                    <img src="images/homepage/bottom-bg-image.png" alt="carousel desktop" class="desktop">
+                    <img src="images/homepage/bottom-page-image-mobile.png" alt="carousel mobile" class="mobile">
+                </div>
+            </div>
+        </main>
+
+        <!-- start:: Footer -->
+
+        {% include 'reusable_templates/footer.html.twig' %}
+
+        <!-- end:: Footer -->
+
+    {% endblock %}
